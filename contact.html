@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Taniti</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <header class="flex container w-full space-between">
+        <a href="index.html"><img src="https://placehold.co/200x80?text=Logo" alt="Taniti logo"></a>
+        <nav class="flex">
+            <ul class="inline-flex">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="attractions.html">Attractions</a></li>
+                <li><a class="nav-link" href="accomodations.html">Accomodations</a></li>
+                <li><a class="nav-link" href="about.html">About / F.A.Q.</a></li>
+                <li><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="block container">
+        <section class="section flex">
+            <div class="container">
+
+                <h1>Contact Us</h1>
+                <p>Have questions or feedback? Reach out to us by filling out the form below.</p>
+
+                <form action="#" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+
+                    <label for="questions">Additional Questions:</label><br>
+                    <textarea id="questions" name="questions" rows="4" cols="50"></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer style="background-color: #232323; padding: 40px 80px;">
+        <div class="container" style="color:white;">
+            <p>123 Main Street, City, State, 12345</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@taniti.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
