@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Taniti Trip</title>
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+        form {
+            margin:auto;
+            display:block;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex container w-full space-between">
+        <a href="index.html"><img src="https://placehold.co/200x80?text=Logo" alt="Taniti logo"></a>
+        <nav class="flex">
+            <ul class="inline-flex">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="attractions.html">Attractions</a></li>
+                <li><a class="nav-link" href="accomodations.html">Accomodations</a></li>
+                <li><a class="nav-link" href="about.html">About / F.A.Q.</a></li>
+                <li><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="block container">
+        <section class="section flex">
+            <div class="container">
+
+                <h1>Book Your Trip</h1>
+                <p>Have questions or feedback? Reach out to us by filling out the form below.</p>
+                <form action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="phone">Your Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    
+                    <label for="date">Date of Arrival:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="returnDate">Date of Return:</label>
+                    <input type="date" id="returnDate" name="returnDate" required>
+                    
+                    <label for="transportation">Travel via Plane or Cruise:</label>
+                    <select id="transportation" name="transportation" required>
+                        <option value="">Choose Transportation</option>
+                        <option value="plane">Plane</option>
+                        <option value="cruise">Cruise</option>
+                    </select>
+                    
+                    <label for="num_of_people">Number of People:</label>
+                    <input type="number" id="num_of_people" name="num_of_people" placeholder="Number of People" required>
+                    
+                    <input type="submit" value="Book Now">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer style="background-color: #232323; padding: 40px 80px;">
+        <div class="container" style="color:white;">
+            <p>123 Main Street, City, State, 12345</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@taniti.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
